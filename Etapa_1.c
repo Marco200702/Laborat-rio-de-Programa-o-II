@@ -1,6 +1,8 @@
 #include <stdio.h>
 
+// define a função principal do programa e indica que ela não recebe nenhum argumento e retorna um valor inteiro
 int main(void){
+
     printf("\nMarco Antonio Cordeiro de Goes\n");
     printf("Tenho 18 anos\n");
     printf("Licenciatura em Computacao\n");
