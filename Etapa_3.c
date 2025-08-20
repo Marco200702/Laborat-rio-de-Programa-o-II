@@ -18,6 +18,7 @@ int main(void){
         printf("\nO numero %2.f se trata de um valor NEGATIVO\n", numero);
     }
     
+//##################################################################################################
 
     //ETAPA 3 - Exercício 8
 
@@ -41,6 +42,8 @@ int main(void){
     }
 
 
+//#############################################################################################
+
     //ETAPA 3 - Exercício 9
 
     float notas = 0;
@@ -49,7 +52,7 @@ int main(void){
     float media;
 
     while (soma != 0){
-        printf("\nInsira a nota da prova %d: ", contador);
+        printf("\nInsira a nota da prova %d (0 para sair): ", contador);
         scanf("%f", &soma);
         ++contador;
         notas += soma;
@@ -61,10 +64,10 @@ int main(void){
     printf("\nA media foi %f\n", media);
 
     if (media >= 7){
-        printf("O aluno foi APROVADO");
+        printf("O aluno foi APROVADO\n\n");
     }
     else if (media >= 5 & media < 7){
-        printf("O aluno esta de RECUPERACAO");
+        printf("O aluno esta de RECUPERACAO\n\n");
     }
     else{
         printf("O aluno esta REPROVADO\n\n");
