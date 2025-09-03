@@ -41,7 +41,8 @@ int main(void){
 
 float graus;
 char tipo;
-float fahrenheit = 5/9;
+float fracao_1 = 5.0/9.0;
+float fracao_2 = 9.0/5.0;
 float result;
 
 printf("Insira a temperatura: ");
@@ -51,16 +52,16 @@ printf("Deseja transformar estes graus em celsius ou fahrenheit (c ou f): ");
 scanf(" %c", &tipo);
 
 if (tipo == 'c'){
-    result = (graus - 32) * fahrenheit;
+    result = (graus - 32) * fracao_1;
     printf("\n%f Celsius\n\n", result);
 }
 
 else if(tipo == 'f'){
-    result = (graus * fahrenheit) + 32;
+    result = (graus * fracao_2) + 32;
     printf("\n%f Fahrenheit\n\n", result);
 }
 else{
-    printf("O tipo de graus inserido não")
+    printf("O tipo de graus inserido não");
 }
 
 }
