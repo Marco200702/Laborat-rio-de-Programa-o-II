@@ -1,0 +1,2 @@
+Linha 1: Introducao a arquivos em C
+Linha 2: texto adicionado com append
