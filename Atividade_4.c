@@ -69,26 +69,22 @@ int main(int argc, char *argv[]) {
     if(argc > 1){
         if(strcmp(argv[1], "write") == 0){
             printf("Leitura de texto");
+            write_text_overwrite(argv[2], argv[3]);
+        }
+        
+        if(strcmp(argv[1], "append") == 0){
+            printf("Adiciona texto");
+            append_text(argv[2], argv[3]);
+
+        }
+        
+        if(strcmp(argv[1], "read") == 0){
+            printf("\nImpressao do texto\n");
+            read_text(argv[2]);
 
         }
     }
-    const char *txtfile = "demo.txt";
-    
-   
-    
-    // 1) Escrever texto sobrescrevendo
-    write_text_overwrite(txtfile, "Linha 1: Introducao a arquivos em C");
-
-    // 2) Acrescentar texto
-    append_text(txtfile, "Linha 2: texto adicionado com append");
-
-    // 3) Ler e mostrar conteúdo
-    printf("=== Conteúdo do arquivo de texto ===\n");
-    read_text(txtfile);
-
-    printf("\n===================================\n");
    
 
     return 0;
 }
-
